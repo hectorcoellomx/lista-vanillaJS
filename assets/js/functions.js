@@ -2,6 +2,18 @@
 
 var frutas = ['Uva','Naranja'];
 
+function agregar_fruta(){
+    var x = fruta_nueva.value;
+    
+    if(x!=""){
+        frutas.push(x);
+        arealista.textContent = "";
+        arealista.appendChild(makeUL(frutas));
+        fruta_nueva.value = "";
+    }
+
+    fruta_nueva.focus();
+}
 
 function makeUL(array) {
 
